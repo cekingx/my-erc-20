@@ -26,7 +26,7 @@ const config: HardhatUserConfig = {
   solidity: "0.8.13",
   networks: {
     testnet: {
-      url: process.env.RINKEBY_URL || "",
+      url: process.env.GOERLI_URL || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
